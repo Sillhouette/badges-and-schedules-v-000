@@ -9,8 +9,11 @@ end
 # #batch_badge_creator takes in a list of names and returns the text for each badge
 ##
 def batch_badge_creator(names)
-  names.collect { |name| "Hello, my name is #{name}."};
+  names.collect { |name| badge_maker(name)};
 end
+
+#batch_badge_creator("Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz")
+#                      ^        ^       ^           ^       ^       ^         ^
 
 ##
 # #assign_rooms takes in a list of names and prints the names and room assignments
